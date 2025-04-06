@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyferník</title>
+    <title>PDF zobrazení</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+        object {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-    <a href="zpevnik.pdf" download>
-        Zpěvník
-    </a>
+    <object data="zpevnik.pdf" type="application/pdf">
+        <p>Pokud se PDF nezobrazuje, klikněte <a href="zpevnik.pdf">sem</a> pro stažení souboru.</p>
+    </object>
 </body>
 </html>
