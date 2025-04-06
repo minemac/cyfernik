@@ -82,7 +82,7 @@ def generate_html(songs):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zpěvník</title>
+  <title>Cyferník</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="styles.css">
   <style>
@@ -140,7 +140,7 @@ def generate_html(songs):
     <a href="zpevnik-dark.pdf" download>Stáhnout pdf verzi (tmavá verze)</a><br>
     <a href="zpevnik-light.pdf" download>Stáhnout pdf verzi (světlá verze)</a>
   </div>
-  <h1>Zpěvník</h1>
+  <h1>Osadní zpěvník Cyferníku</h1>
   <div class="index">
     <h2>Obsah</h2>
 ''']
