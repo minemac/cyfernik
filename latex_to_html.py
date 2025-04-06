@@ -38,6 +38,9 @@ def parse_song_body(body):
         elif line == '':
             if in_verse:
                 output.append('<br>')
+        elif r'\brk' in line:
+            line = line.replace('\\brk', '\n')  # Replace with newline for proper line break
+            output.append(convert_chorded_line(line).replace('\n', '<br>'))  # Convert newline to <br> after processing
         else:
             output.append(convert_chorded_line(line))
 
@@ -74,7 +77,6 @@ def convert_chorded_line(line):
 
 def generate_html(songs):
     songs_sorted = sorted(songs, key=lambda s: s[0].lower())
-
     html = ['''<!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -137,14 +139,24 @@ def generate_html(songs):
     <h2>Obsah</h2>
 ''']
 
+    current_letter = None
     for idx, (title, meta, _) in enumerate(songs_sorted, start=1):
+        first_letter = title[0].upper()
+        if first_letter != current_letter:
+            if current_letter is not None:
+                html.append('</div>')
+            current_letter = first_letter
+            html.append(f'<h3>{current_letter}</h3><div>')
         num = re.search(r'number=(\d+)', meta or '')
         number = num.group(1) if num else str(idx)
         html.append(f'<a href="#song-{number}">{escape(title)} ({number})</a>')
 
+    if current_letter is not None:
+        html.append('</div>')
+
     html.append('</div><hr>')
 
-    for idx, (title, meta, body) in enumerate(songs_sorted, start=1):
+    for idx, (title, meta, body) in enumerate(songs, start=1):
         num = re.search(r'number=(\d+)', meta or '')
         number = num.group(1) if num else str(idx)
         author_match = re.search(r'by={(.*?)}', meta or '')
@@ -169,6 +181,12 @@ with open("nove.tex", encoding="utf-8") as f:
 
 all_content = songs_part + "\n" + nove_part
 songs = extract_songs(all_content)
+
+# Přidání čísel podle pořadí v originálních souborech
+for idx, song in enumerate(songs, start=1):
+    title, meta, body = song
+    meta = (meta or '') + f' number={idx}'
+    songs[idx - 1] = (title, meta, body)
 
 html = generate_html(songs)
 with open("zpevnik.html", "w", encoding="utf-8") as f:
