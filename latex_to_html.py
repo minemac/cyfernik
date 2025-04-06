@@ -13,7 +13,7 @@ def parse_song_body(body):
 
     for line in lines:
         line = line.strip().rstrip("\\")
-        line = line.replace(r'\lrep', '[:').replace(r'\rrep', ':]')
+        line = line.replace(r'\lrep', '[:').replace(r'\rrep', ':]').replace(r'\#', '#')
 
         if line.startswith(r'\beginverse'):
             output.append(f'<div class="verse"><div class="verse-number">{verse_number}.</div>')
@@ -83,6 +83,8 @@ def generate_html(songs):
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Zpěvník</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
   <style>
     body {
       font-family: sans-serif;
@@ -134,6 +136,10 @@ def generate_html(songs):
 </head>
 <body>
   <a id="top"></a>
+  <div class="download-links">
+    <a href="zpevnik-dark.pdf" download>Stáhnout pdf verzi (tmavá verze)</a><br>
+    <a href="zpevnik-light.pdf" download>Stáhnout pdf verzi (světlá verze)</a>
+  </div>
   <h1>Zpěvník</h1>
   <div class="index">
     <h2>Obsah</h2>
