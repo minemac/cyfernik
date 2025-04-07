@@ -16,15 +16,15 @@
       margin-left: auto;
       margin-right: auto;
     }
-    a { color: #81c784; }
+    a { color:rgb(255, 166, 0); }
     h1, h2 { color: #ffffff; font-family: bahnschrift; }
     h1 { text-align: center; }
     h2 { margin-top: 2.5em; }
     .verse, .chorus { margin: 1em 0; }
-    .verse-number { font-weight: bold; display: inline-block; width: auto; margin-bottom: 0.2em; }
-    .chorus .label { font-weight: bold; }
+    .verse-number { font-weight: bold; display: inline-block; width: auto; margin-bottom: 0.2em; color: #000000; background-color: rgb(255, 255, 255); padding: 0.2em; border-radius: 0.3em;}
+    .chorus .label { font-weight: bold; color: #000000; background-color: rgb(255, 166, 0); padding: 0.2em; border-radius: 0.3em; }
     .chord {
-      color: #81d4fa;
+      color: rgb(255, 166, 0);
       font-weight: bold;
       display: inline-block;
       min-width: 2.5em;
@@ -49,6 +49,22 @@
       text-align: right;
       font-size: 0.9em;
     }
+    .back-to-top a {
+        color: #000000;
+        background-color: rgb(255, 166, 0);
+        padding: 0.5em;
+        border-radius: 0.3em;
+        text-decoration: none;
+        font-family: bahnschrift;
+    }
+    .download-links {
+      text-align: center;
+      color:rgb(76, 76, 76);
+    }
+    .download-links a {
+      color:rgb(76, 76, 76);
+      text-decoration: none;
+    }
     @media (max-width: 600px) {
       body { font-size: 16px; padding: 0.5em; }
       .chord { min-width: 2em; }
@@ -58,8 +74,7 @@
 <body>
   <a id="top"></a>
   <div class="download-links">
-    <a href="zpevnik-dark.pdf" download>Stáhnout pdf verzi (tmavá verze)</a><br>
-    <a href="zpevnik-light.pdf" download>Stáhnout pdf verzi (světlá verze)</a>
+    <a href="zpevnik-dark.pdf" download>Stáhnout pdf verzi (tmavá verze)</a>, <a href="zpevnik-light.pdf" download>Stáhnout pdf verzi (světlá verze)</a>
   </div>
 <h1 style="text-align: center;">Osadní zpěvník T.O.</h1>
 <div style="text-align: center;">
@@ -757,7 +772,7 @@ Já chci mít čapku s bambulí nahoře, </pre>
 jíst kaštany a mýt se v lavoře, </pre>
 <pre class="song-line"><span class="chord">G</span>                <span class="chord">A</span>             <span class="chord">D</span>   
 od rána po celý den zpívat si jen, </pre>
-<pre class="song-line">                        <span class="chord">G~~A~~D</span>
+<pre class="song-line">                        <span class="chord">G  A  D</span>
 zpívat si: pam pam pam … </pre>
 </div>
 <div class="verse"><div class="verse-number">2.</div>
@@ -929,7 +944,7 @@ a že hodně jed a hodně pil, </pre>
 <pre class="song-line">                                      
 a pak se oženil a pak se usadil a žil </pre>
 </div>
-<div class="verse"><div class="verse-number">7.</div>
+<div class="verse">
 </div>
 <div class="chorus"><span class="label">R:</span><br>
 <pre class="song-line">                  
@@ -1194,7 +1209,7 @@ nemít žádné kamarády, </pre>
 <pre class="song-line">                      <span class="chord">C</span> 
 tomu já říkám neštěstí. </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse">
 <pre class="song-line">      <span class="chord">Ami</span>       <span class="chord">C</span>     
 nemít srdce - vadí, </pre>
 <pre class="song-line">        <span class="chord">Ami</span>      <span class="chord">C</span>       
@@ -1204,7 +1219,7 @@ zažít nudu - jó, to vadí, </pre>
 <pre class="song-line">   <span class="chord">G7</span>     
 to vadí. </pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">          
 = 1. (2x) </pre>
 </div>
@@ -2255,7 +2270,7 @@ Katy Rodgers těm dvoum život vzal, </pre>
 <pre class="song-line">                                   
 svědomí měl, vedle nich si klek’ … </pre>
 </div>
-<div class="verse"><div class="verse-number">5.</div>
+<div class="verse">
 <pre class="song-line">        
 \emph{ %</pre>
 <pre class="song-line">                     
@@ -2955,13 +2970,13 @@ to je, pane, překvapení, (není) </pre>
 <h2>45. Nagasaki Hirošima</h2>
 <p><i>Mňága \&amp; Žďorp</i></p>
 <div class="chorus"><span class="label">R:</span><br>
-<pre class="song-line"><span class="chord">C</span>        <span class="chord">G</span>       <span class="chord">F</span>             <span class="chord">G</span>          <span class="chord">C~~~G~~~F~~~G</span>
+<pre class="song-line"><span class="chord">C</span>        <span class="chord">G</span>       <span class="chord">F</span>             <span class="chord">G</span>          <span class="chord">C   G   F   G</span>
 Tramvají dvojkou jezdíval jsem do Židenic, </pre>
 <pre class="song-line">  <span class="chord">C</span>         <span class="chord">G</span>     <span class="chord">F</span>        <span class="chord">G</span>       <span class="chord">Ami</span>    
 z tak velký lásky většinou nezbyde nic, </pre>
 <pre class="song-line">  <span class="chord">F</span>      <span class="chord">C</span>     <span class="chord">F</span>          <span class="chord">C</span>      <span class="chord">G</span>  
 z takový lásky jsou kruhy pod očima </pre>
-<pre class="song-line">      <span class="chord">C</span>       <span class="chord">G</span>       <span class="chord">F</span>         <span class="chord">G</span>        <span class="chord">C~~~G~~~F~~~G</span>
+<pre class="song-line">      <span class="chord">C</span>       <span class="chord">G</span>       <span class="chord">F</span>         <span class="chord">G</span>        <span class="chord">C   G   F   G</span>
 a dvě spálený srdce – Nagasaki, Hirošima. </pre>
 </div>
 <div class="verse"><div class="verse-number">1.</div>
@@ -2991,8 +3006,8 @@ Tramvají dvojkou jezdíval jsem do Židenic, </pre>
 z tak velký lásky většinou nezbyde nic, </pre>
 <pre class="song-line">                                    
 z takový lásky jsou kruhy pod očima </pre>
-<pre class="song-line">                                                       
-[: a dvě spálený srdce – Nagasaki, Hirošima :] \rep{4} </pre>
+<pre class="song-line">                                                
+[: a dvě spálený srdce – Nagasaki, Hirošima :]  </pre>
 </div>
 <div class="back-to-top"><a href="#top">↑ Nahoru</a></div>
 </div>
@@ -3192,7 +3207,7 @@ znám plno hezkejch ženskejch k světu, ale tahle hraje prim. </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
 <pre class="song-line">       <span class="chord">F</span>                         <span class="chord">C</span>                   
-Kdo si kazíš smysl pro krásu, ať s~tou a nebo s~tou, </pre>
+Kdo si kazíš smysl pro krásu, ať s tou a nebo s tou, </pre>
 <pre class="song-line">                      <span class="chord">Ami</span>             <span class="chord">D7</span>         <span class="chord">G7</span>    
 dej si říct, že kromě Texasu, tyhle růže nerostou. </pre>
 <pre class="song-line">       <span class="chord">C</span>            <span class="chord">C7</span>              <span class="chord">F</span>            <span class="chord">C</span>     
@@ -3216,7 +3231,7 @@ Kdo si kazíš…</pre>
 </div>
 <div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                                                 
-Hned si dala se mnou rande a přišla přesně v~půl </pre>
+Hned si dala se mnou rande a přišla přesně v půl </pre>
 <pre class="song-line">                                            
 a dole teklo Rio Grande, po něm měsíc plul. </pre>
 <pre class="song-line">                                                         
@@ -3392,11 +3407,11 @@ tu du du du...     </pre>
 <div class="song" id="song-52">
 <h2>52. Prezident pankovejch států</h2>
 <p><i>Kašpárek v rohlíku</i></p>
-<div class="verse"><div class="verse-number">1.</div>
+<div class="verse">
 <pre class="song-line">                  <span class="chord">E - E, D, E - E, D, E - E, D, C</span> 
 {\nolyrics Intro:  }</pre>
 </div>
-<div class="verse"><div class="verse-number">2.</div>
+<div class="verse"><div class="verse-number">1.</div>
 <pre class="song-line"><span class="chord">Emi</span>                    <span class="chord">G</span>                 
 Já budu prezidentem, pankovejch států, </pre>
 <pre class="song-line"><span class="chord">D</span>                      <span class="chord">C</span>               
@@ -3420,7 +3435,7 @@ Hej héj, tý jó, vyjedu v tanku v rytmu panku vítat novej den </pre>
 <pre class="song-line"><span class="chord">Emi</span>        <span class="chord">G</span>          <span class="chord">D</span>                           <span class="chord">C</span>                
 Heh héj, nech bejt, ať nechytí tě prej seš dítě žádnej prezident </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                                     
 Já budu prezidentem pankovejch států </pre>
 <pre class="song-line">                                  
@@ -3443,7 +3458,7 @@ A komu se nechce vstávat, ať leží v posteli </pre>
 <pre class="song-line">                                 
 Hej hej, ty jó, vyjedu v tanku...</pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                                     
 Já budu prezidentem pankovejch států </pre>
 <pre class="song-line">                                        
@@ -3457,7 +3472,7 @@ Ty máš fáro já mám háro někdo bere fešnej plat </pre>
 <pre class="song-line">                                         
 Chudej bejvá bohatej když má někoho rád. </pre>
 </div>
-<div class="verse"><div class="verse-number">5.</div>
+<div class="verse">
 <pre class="song-line">              
 Hej hej, ty jó</pre>
 <pre class="song-line"><span class="chord">Emi</span>        <span class="chord">G</span>          <span class="chord">D</span>                           <span class="chord">C</span>                
@@ -3494,15 +3509,15 @@ Letim, letim hledat světy, chci bejt zpátky do pěti </pre>
 <pre class="song-line"><span class="chord">G</span>                   <span class="chord">A</span>                      
 Letim hledat světy, můžeš se mnou jet i ty </pre>
 </div>
-<div class="verse"><div class="verse-number">2.</div>
+<div class="verse">
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">       <span class="chord">Dsus2</span>         <span class="chord">B</span>           <span class="chord">Dsus2</span>            <span class="chord">B</span>    
 Tam na konci galaxie, tan to lítá, tam to žije </pre>
 <pre class="song-line">       <span class="chord">G</span>                       <span class="chord">F</span>             <span class="chord">A</span>  
 tam je každej druhej týpek zelenej jak pistácie </pre>
 <pre class="song-line">       <span class="chord">Dsus2</span>          <span class="chord">B</span>          <span class="chord">Dsus2</span>           <span class="chord">B</span>    
-Co nás čeká za legraci ve~vesmírný restauraci </pre>
+Co nás čeká za legraci ve vesmírný restauraci </pre>
 <pre class="song-line"><span class="chord">G</span>                  <span class="chord">F</span>           <span class="chord">A</span>      
 číšníky tu nemají, talíře samy lítají </pre>
 <pre class="song-line"><span class="chord">Dsus2</span>               <span class="chord">B</span>          <span class="chord">Dsus2</span>             <span class="chord">B</span>            
@@ -3546,8 +3561,8 @@ seřídil hodinky na zápěstí. </pre>
 <div class="chorus"><span class="label">R:</span><br>
 <pre class="song-line"><span class="chord">D</span>               <span class="chord">A</span>           
 A čápi z komína od cihelny, </pre>
-<pre class="song-line">        <span class="chord">C</span>                <span class="chord">G</span>       <span class="chord">A</span>          
-zobákem klapou, asi jsou nesmrtelný \rep{2} </pre>
+<pre class="song-line">        <span class="chord">C</span>                <span class="chord">G</span>       <span class="chord">A</span>   
+zobákem klapou, asi jsou nesmrtelný  </pre>
 </div>
 <div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                             
@@ -3623,8 +3638,8 @@ kdo zatáhne za brzdu </pre>
 a kdo je padlej na hlavu </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
-<pre class="song-line">                       
-Kdo bude řídit… \rep{2}</pre>
+<pre class="song-line">                
+Kdo bude řídit… </pre>
 </div>
 <div class="back-to-top"><a href="#top">↑ Nahoru</a></div>
 </div>
@@ -3633,9 +3648,9 @@ Kdo bude řídit… \rep{2}</pre>
 <p><i>Jaromír Nohavica</i></p>
 <div class="verse"><div class="verse-number">1.</div>
 <pre class="song-line"><span class="chord">C</span>              <span class="chord">G</span>        <span class="chord">F</span>              <span class="chord">C</span>    
-Poněvadž nemám kanady a neznám písně z~pamp </pre>
+Poněvadž nemám kanady a neznám písně z pamp </pre>
 <pre class="song-line"><span class="chord">F</span>     <span class="chord">C</span>    <span class="chord">G</span>              <span class="chord">C</span>    
-hó hó hó a neznám písně z~pamp </pre>
+hó hó hó a neznám písně z pamp </pre>
 <pre class="song-line">                                             
 vyloučili mě z osady že prý jsem houby tramp </pre>
 <pre class="song-line">                                 
@@ -3966,11 +3981,11 @@ Rovnou, jo… </pre>
 <div class="song" id="song-61">
 <h2>61. Zafúkané</h2>
 <p><i>Fleret</i></p>
-<div class="verse"><div class="verse-number">1.</div>
+<div class="verse">
 <pre class="song-line">       
 Capo 4 </pre>
 </div>
-<div class="verse"><div class="verse-number">2.</div>
+<div class="verse"><div class="verse-number">1.</div>
 <pre class="song-line"><span class="chord">Ami</span>         <span class="chord">Asus2</span>        <span class="chord">Ami</span>       <span class="chord">Asus2</span>    
 Větr sněh zanésl z hor do polí, </pre>
 <pre class="song-line"><span class="chord">Ami</span>       <span class="chord">C</span>          <span class="chord">G</span>      <span class="chord">Ami</span>    
@@ -3990,7 +4005,7 @@ Zafúkané, zafúkané, </pre>
 <pre class="song-line"><span class="chord">F</span>         <span class="chord">C</span>         <span class="chord">E</span>     <span class="chord">Ami</span>   
 kolem mňa všecko je zafúkané. </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                               
 Už vašu chalupu z dálky vidím, </pre>
 <pre class="song-line">                                
@@ -4004,7 +4019,7 @@ a budu u tvého okénka stát. </pre>
 <pre class="song-line">                             
 … okénko k tobě je zafúkané. </pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                                
 Od tvého okna sa smutný vracám, </pre>
 <pre class="song-line">                                    
@@ -4791,7 +4806,7 @@ plná žáru bývá, hned zas samý chlad. </pre>
 <pre class="song-line">              
 Veď mě dál... </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse">
 <pre class="song-line"> <span class="chord">C</span>           <span class="chord">G</span>                <span class="chord">D</span>               
 jméno své, a pod něj, že jsem žil hrozně rád, </pre>
 <pre class="song-line"><span class="chord">Emi</span>                  <span class="chord">F</span>               
@@ -5301,11 +5316,11 @@ ona sa jim v noci utrhla. </pre>
 <div class="song" id="song-84">
 <h2>84. Ukolébavka</h2>
 <p><i>Karel Kryl</i></p>
-<div class="verse"><div class="verse-number">1.</div>
+<div class="verse">
 <pre class="song-line">                  <span class="chord">Ami</span><span class="chord">F</span><span class="chord">E</span>
 {\nolyrics Intro:   }</pre>
 </div>
-<div class="verse"><div class="verse-number">2.</div>
+<div class="verse"><div class="verse-number">1.</div>
 <pre class="song-line">          <span class="chord">Ami</span>                           <span class="chord">G</span>   
 Spinkej, synáčku, spi, zavři očička svý - </pre>
 <pre class="song-line">     <span class="chord">E</span>           <span class="chord">Ami</span>    <span class="chord">F</span> <span class="chord">E</span>
@@ -5323,7 +5338,7 @@ než kdo cokoli zví, rány se zajizví </pre>
 <pre class="song-line">   <span class="chord">E</span>          <span class="chord">Ami</span>    <span class="chord">F</span><span class="chord">E</span>  
 a budeš jako táta.  :] </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                                         
 Spinkej, synáčku, spi, zavři očička svý, </pre>
 <pre class="song-line">                    
@@ -5341,7 +5356,7 @@ chlast místo náručí couvat tě naučí </pre>
 <pre class="song-line">                      
 a budeš jako táta. :] </pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                                           
 Spinkáš, synáčku, spíš, nouze vyžrala spíž </pre>
 <pre class="song-line">                       
@@ -5364,11 +5379,11 @@ a budeš jako táta… :] </pre>
 <div class="song" id="song-85">
 <h2>85. Král a klaun</h2>
 <p><i>Karel Kryl</i></p>
-<div class="verse"><div class="verse-number">1.</div>
+<div class="verse">
 <pre class="song-line">                  <span class="chord">G C G C G C</span>
 {\nolyrics Intro: }</pre>
 </div>
-<div class="verse"><div class="verse-number">2.</div>
+<div class="verse"><div class="verse-number">1.</div>
 <pre class="song-line"><span class="chord">D</span>    <span class="chord">C</span>       <span class="chord">G</span>    <span class="chord">C</span><span class="chord">G</span>  <span class="chord">C</span>      <span class="chord">G</span>     <span class="chord">C</span><span class="chord">G</span>
 Král do boje táh’  do veliké dálky   </pre>
 <pre class="song-line">    <span class="chord">C</span>         <span class="chord">G</span>     <span class="chord">D7</span>            <span class="chord">G</span>      
@@ -5383,7 +5398,7 @@ bys nepoznal lháře, co zakrývá strach. </pre>
 Tiše šeptal při té hrůze: </pre>
 <pre class="song-line"><span class="chord">G</span>                          
 ”Inter arma silent musae,” </pre>
-<pre class="song-line"><span class="chord">A</span>                          <span class="chord">D7~~C#~~D7</span> 
+<pre class="song-line"><span class="chord">A</span>                          <span class="chord">D7  C#  D7</span> 
 místo zvonku cinkal brněním, </pre>
 <pre class="song-line">     <span class="chord">C</span>       <span class="chord">G</span>    <span class="chord">C</span><span class="chord">G</span>  <span class="chord">C</span>      <span class="chord">G</span>     <span class="chord">C</span><span class="chord">G</span>
 Král do boje táh’, do veliké dálky,  </pre>
@@ -5392,7 +5407,7 @@ a s ním do té války </pre>
 <pre class="song-line"><span class="chord">D7</span>            <span class="chord">G</span>    <span class="chord">H</span><span class="chord">C</span><span class="chord">G</span><span class="chord">A7</span> 
 jel na mezku klaun   . </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                                      
 Král do boje táh, a sotva se vzdálil, </pre>
 <pre class="song-line">                                  
@@ -5412,7 +5427,7 @@ král do boje táh’, a sotva se vzdálil, </pre>
 <pre class="song-line">                                  
 tak vesnice pálil a dobýval měst. </pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                                        
 Král do boje táh’, s tou vraždící lůzou </pre>
 <pre class="song-line">                                    
@@ -5432,7 +5447,7 @@ král do boje táh’, s tou vraždící lůzou </pre>
 <pre class="song-line">                                    
 klaun třásl se hrůzou a odvetu kul. </pre>
 </div>
-<div class="verse"><div class="verse-number">5.</div>
+<div class="verse"><div class="verse-number">4.</div>
 <pre class="song-line">                                           
 Král do boje táh’, a v červáncích vlídných </pre>
 <pre class="song-line">                                               
@@ -5463,11 +5478,11 @@ klaun na loutnu hrál… </pre>
 <div class="song" id="song-86">
 <h2>86. Salome</h2>
 <p><i>Karel Kryl</i></p>
-<div class="verse"><div class="verse-number">1.</div>
+<div class="verse">
 <pre class="song-line">                                
 \emph {(Originál o půl tón níž)}</pre>
 </div>
-<div class="verse"><div class="verse-number">2.</div>
+<div class="verse"><div class="verse-number">1.</div>
 <pre class="song-line"><span class="chord">Am</span>                 <span class="chord">C</span>                
 Něžná i proradná, krutá i bezradná </pre>
 <pre class="song-line"><span class="chord">G</span>                                  
@@ -5505,7 +5520,7 @@ Krví ti planou, Salome, la la la </pre>
 <pre class="song-line"><span class="chord">Am C E</span>
  </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                               
 Noci už ubývá, císař se usmívá </pre>
 <pre class="song-line">                                   
@@ -5908,7 +5923,7 @@ Vyhasnul kotel / Heja hej …. </pre>
 a Náhoda je / Heja hej …. </pre>
 <pre class="song-line">                <span class="chord">G</span>               
 Štěstí od podkovy  / Heja hej…. </pre>
-<pre class="song-line"><span class="chord">D/F#~~G~~D/F#</span>                       
+<pre class="song-line"><span class="chord">D/F#  G  D/F#</span>                       
  Heja hej……./Heja hej…. </pre>
 </div>
 <div class="back-to-top"><a href="#top">↑ Nahoru</a></div>
@@ -5916,11 +5931,11 @@ a Náhoda je / Heja hej …. </pre>
 <div class="song" id="song-92">
 <h2>92. Veličenstvo kat</h2>
 <p><i>Karel Kryl</i></p>
-<div class="verse"><div class="verse-number">1.</div>
+<div class="verse">
 <pre class="song-line">                                
 \emph {(Originál o půl tón níž)}</pre>
 </div>
-<div class="verse"><div class="verse-number">2.</div>
+<div class="verse"><div class="verse-number">1.</div>
 <pre class="song-line">  <span class="chord">Dmi</span>                 <span class="chord">C</span>         <span class="chord">Dmi</span>    
 V ponurém osvětlení gotického sálu </pre>
 <pre class="song-line"><span class="chord">F</span>                <span class="chord">Gmi</span>          <span class="chord">A</span>    
@@ -5930,7 +5945,7 @@ a houfec mordýřů si žádá požehnání, </pre>
 <pre class="song-line">   <span class="chord">Gmi</span>             <span class="chord">Dmi</span>         <span class="chord">A7</span>           <span class="chord">Dmi</span>       
 [: vždyť první z rytířů je Veličenstvo Kat. :] </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                                               
 Kněz-ďábel, co mši slouží, z oprátky má štolu, </pre>
 <pre class="song-line">                                   
@@ -5950,7 +5965,7 @@ v kraji hnízdí hejno krkavčí, </pre>
 <pre class="song-line"><span class="chord">Gmi</span>                       <span class="chord">A7</span>   
 lidu vládne mistr popravčí. </pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                                         
 Král klečí před Satanem na žezlo se těší </pre>
 <pre class="song-line">                                       
@@ -5960,7 +5975,7 @@ a zástup kacířů se raduje a jásá, </pre>
 <pre class="song-line">                                                
 [: vždyť prvním z rytířů je Veličenstvo Kat. :] </pre>
 </div>
-<div class="verse"><div class="verse-number">5.</div>
+<div class="verse"><div class="verse-number">4.</div>
 <pre class="song-line">                                   
 Na rohu ulice vrah o morálce káže, </pre>
 <pre class="song-line">                                         
@@ -5980,7 +5995,7 @@ soudcové se na ně zlobili, </pre>
 <pre class="song-line">                         
 zmrzlináře dětem zabili. </pre>
 </div>
-<div class="verse"><div class="verse-number">6.</div>
+<div class="verse"><div class="verse-number">5.</div>
 <pre class="song-line">                                                
 Byl hrozný tento stát, když musel jsi se dívat, </pre>
 <pre class="song-line">                                     
@@ -5990,7 +6005,7 @@ a bylo jim to málo, poručili dětem </pre>
 <pre class="song-line">                                              
 [: modlit se jak si přálo Veličenstvo Kat. :] </pre>
 </div>
-<div class="verse"><div class="verse-number">7.</div>
+<div class="verse"><div class="verse-number">6.</div>
 <pre class="song-line">                                           
 S úšklebkem Ďábel viděl pro každého podíl, </pre>
 <pre class="song-line">                                         
@@ -6043,8 +6058,8 @@ V dlani motýl usíná, hvězdička už zhasíná, </pre>
 vánek, co ji k tobě nes, až do léta ti odlétá. </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
-<pre class="song-line">        
-\rep{2} </pre>
+<pre class="song-line"> 
+ </pre>
 </div>
 <div class="back-to-top"><a href="#top">↑ Nahoru</a></div>
 </div>
@@ -6128,11 +6143,11 @@ Prosím vás… </pre>
 <p><i>Pokáč</i></p>
 <pre class="song-line">        
 \capo{1}</pre>
-<div class="verse"><div class="verse-number">1.</div>
+<div class="verse">
 <pre class="song-line"><span class="chord">G</span><span class="chord">Emi</span><span class="chord">C</span><span class="chord">D</span>
     </pre>
 </div>
-<div class="verse"><div class="verse-number">2.</div>
+<div class="verse"><div class="verse-number">1.</div>
 <pre class="song-line"><span class="chord">G</span>                     
 Jednou mi drahá říká: </pre>
 <pre class="song-line"><span class="chord">Emi</span>                      
@@ -6142,7 +6157,7 @@ Já na to, že chci spíš psa </pre>
 <pre class="song-line"><span class="chord">D</span>                     
 A jeli jsme pro kočku </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line"><span class="chord">G</span>                      
 V útulku v Měcholupech </pre>
 <pre class="song-line"><span class="chord">Emi</span>                        
@@ -6152,7 +6167,7 @@ Kočky jsou zcela zdarma </pre>
 <pre class="song-line"><span class="chord">D</span>                           
 Jen očkování za patnáct set </pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line"><span class="chord">G</span>                   
 Po dlouhým vybírání </pre>
 <pre class="song-line"><span class="chord">Emi</span>                        
@@ -6162,7 +6177,7 @@ Jedno z koťátek jemně sevře </pre>
 <pre class="song-line"><span class="chord">D</span>                          
 Můj prst ve svých drápkách </pre>
 </div>
-<div class="verse"><div class="verse-number">5.</div>
+<div class="verse"><div class="verse-number">4.</div>
 <pre class="song-line">                     
 Tak volba byla jasná </pre>
 <pre class="song-line">                   
@@ -6190,7 +6205,7 @@ Každý den projdu terorem </pre>
 <pre class="song-line">                            
 Mám nejspíš kočku s errorem </pre>
 </div>
-<div class="verse"><div class="verse-number">6.</div>
+<div class="verse"><div class="verse-number">5.</div>
 <pre class="song-line">                     
 Po pár dnech soužití </pre>
 <pre class="song-line">                   
@@ -6200,7 +6215,7 @@ Koťátko v náručí spí </pre>
 <pre class="song-line">                          
 A pak zkadí půlku kuchyně </pre>
 </div>
-<div class="verse"><div class="verse-number">7.</div>
+<div class="verse"><div class="verse-number">6.</div>
 <pre class="song-line">                       
 Prostě nic, co nečekáš </pre>
 <pre class="song-line">                   
@@ -6210,7 +6225,7 @@ Když útulek zaručí </pre>
 <pre class="song-line">                  
 Na záchůdek naučí </pre>
 </div>
-<div class="verse"><div class="verse-number">8.</div>
+<div class="verse"><div class="verse-number">7.</div>
 <pre class="song-line">                         
 Jenže pár měsíců je pryč </pre>
 <pre class="song-line">                       
@@ -6220,7 +6235,7 @@ Bytem čpí příšernej smrad </pre>
 <pre class="song-line">                          
 Za kočkou lítám s lopatou </pre>
 </div>
-<div class="verse"><div class="verse-number">9.</div>
+<div class="verse"><div class="verse-number">8.</div>
 <pre class="song-line">                          
 Když jí zkusím pomoct sám </pre>
 <pre class="song-line">                       
@@ -6234,7 +6249,7 @@ A ještě potřísnit </pre>
 <pre class="song-line">                
 Mám doma kočku… </pre>
 </div>
-<div class="verse"><div class="verse-number">10.</div>
+<div class="verse"><div class="verse-number">9.</div>
 <pre class="song-line">                      
 Za noc nejmíň pětkrát </pre>
 <pre class="song-line">                    
@@ -6244,7 +6259,7 @@ Pak práci šéf se zeptá </pre>
 <pre class="song-line">                            
 Proč vždy tak ospalý přijdu </pre>
 </div>
-<div class="verse"><div class="verse-number">11.</div>
+<div class="verse"><div class="verse-number">10.</div>
 <pre class="song-line">                  
 Že občas hrdě nám </pre>
 <pre class="song-line">                     
@@ -6254,7 +6269,7 @@ Poznáš až ráno když se </pre>
 <pre class="song-line">                                
 S torzem myši v ústech vzbouzíš </pre>
 </div>
-<div class="verse"><div class="verse-number">12.</div>
+<div class="verse"><div class="verse-number">11.</div>
 <pre class="song-line">                       
 Tak jsme si dobrovolně </pre>
 <pre class="song-line">                    
@@ -6264,7 +6279,7 @@ Stálo nás to patnáct stovek </pre>
 <pre class="song-line">                          
 A jednu zbrusu novou sofu </pre>
 </div>
-<div class="verse"><div class="verse-number">13.</div>
+<div class="verse"><div class="verse-number">12.</div>
 <pre class="song-line">                     
 Kouše, škrábe, drásá </pre>
 <pre class="song-line">                      
@@ -6278,7 +6293,7 @@ Zvlášť, když se mi rejpe v žíle </pre>
 <pre class="song-line">                
 Mám doma kočku… </pre>
 </div>
-<div class="verse"><div class="verse-number">14.</div>
+<div class="verse"><div class="verse-number">13.</div>
 <pre class="song-line">     <span class="chord">Emi</span>             <span class="chord">C</span>    
 Ráda dlouze sedá v okně </pre>
 <pre class="song-line"><span class="chord">D</span>            <span class="chord">Emi</span>   
@@ -6288,7 +6303,7 @@ Bůh ví, proč nejradši v zimě </pre>
 <pre class="song-line">                     
 Když venku padá sníh </pre>
 </div>
-<div class="verse"><div class="verse-number">15.</div>
+<div class="verse"><div class="verse-number">14.</div>
 <pre class="song-line">         <span class="chord">Emi</span>           <span class="chord">C</span>            
 Když pak v bytě máme mínus dvacet </pre>
 <pre class="song-line"><span class="chord">D</span>             <span class="chord">G</span> 
@@ -6437,11 +6452,11 @@ zimou se celá třeseš, proč venku stojíš. </pre>
 <pre class="song-line">     <span class="chord">G</span>                                     <span class="chord">G</span>     <span class="chord">C</span>          
 Pojď dál, prosím tě, nenech se,  prosit se dál - nenech se. </pre>
 </div>
-<div class="verse"><div class="verse-number">2.</div>
+<div class="verse">
 <pre class="song-line"><span class="chord">G</span> <span class="chord">C</span> <span class="chord">G</span> <span class="chord">C</span>
        </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                                                       
 Sedíme na pavlači, přichází ráno, tobě se lesknou oči. </pre>
 <pre class="song-line">                                                      
@@ -6647,11 +6662,11 @@ Má drahá dej mi víc… </pre>
 <p><i>Zuzana Navarová</i></p>
 <pre class="song-line">          
 \ifchorded</pre>
-<div class="verse"><div class="verse-number">1.</div>
+<div class="verse">
 </div>
 <pre class="song-line">   
 \fi</pre>
-<div class="verse"><div class="verse-number">2.</div>
+<div class="verse"><div class="verse-number">1.</div>
 <pre class="song-line"><span class="chord">Dmi</span>                       <span class="chord">E</span>     
 Bylas’ jak poslední hlt vína, </pre>
 <pre class="song-line"><span class="chord">A7</span>               <span class="chord">Dmi</span>       <span class="chord">Dbim</span><span class="chord">A7</span>
@@ -6673,7 +6688,7 @@ a my jsme v koncích čím dál blíž,  </pre>
 <pre class="song-line">   <span class="chord">Dmi</span>                     <span class="chord">Gmi</span>        <span class="chord">Dbim</span>    <span class="chord">A7</span>       
 [: a me tu ha nadži vava jaj dari dari daj. :] </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                                 
 Zejtra tě potkám za svým stínem, </pre>
 <pre class="song-line">                          
@@ -6687,7 +6702,7 @@ hořká a sladká splývají. </pre>
 <pre class="song-line">                                
 Co my dva z lásky vlastně máme… </pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                              
 Bylas’ jak poslední hlt vína, </pre>
 <pre class="song-line">                               
@@ -6860,7 +6875,7 @@ postavím ho pevný, navěky bude stát. </pre>
 <pre class="song-line">       
 Ještě… </pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse">
 <pre class="song-line">       
 hmmmm… </pre>
 </div>
@@ -7080,13 +7095,13 @@ Od vlků odraná hvězdáře Giordána… opouštíš. </pre>
 <p><i>Pokáč</i></p>
 <pre class="song-line">                          
 doporučení: CAPO IV od Emi</pre>
-<div class="verse"><div class="verse-number">1.</div>
+<div class="verse">
 <pre class="song-line"><span class="chord">Ami</span><span class="chord">F</span><span class="chord">C</span><span class="chord">G</span><span class="chord">Ami</span><span class="chord">F</span><span class="chord">C</span><span class="chord">G</span><span class="chord">Ami</span><span class="chord">F</span><span class="chord">G</span><span class="chord">E7</span>
             </pre>
 <pre class="song-line"><span class="chord">F</span> <span class="chord">C</span> <span class="chord">G</span> <span class="chord">C</span>    <span class="chord">F</span> <span class="chord">C</span> <span class="chord">G</span> <span class="chord">C</span>
                   </pre>
 </div>
-<div class="verse"><div class="verse-number">2.</div>
+<div class="verse"><div class="verse-number">1.</div>
 <pre class="song-line">    <span class="chord">Ami</span>         <span class="chord">F</span>    
 Mám nadupanej komp </pre>
 <pre class="song-line"><span class="chord">C</span>          <span class="chord">G</span>         
@@ -7104,7 +7119,7 @@ ale stejně to neni co to bejvalo   </pre>
 <pre class="song-line"> 
 }</pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                             
 Máme tisíce stránek s pornem </pre>
 <pre class="song-line">                         
@@ -7130,13 +7145,13 @@ když rodiče spali my čekali do rána   </pre>
 <pre class="song-line">            <span class="chord">F</span>            <span class="chord">C</span>              <span class="chord">G</span>      
 až se načte fotka ženský s pořádnejma … kozama </pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse">
 <pre class="song-line"><span class="chord">Ami</span><span class="chord">F</span><span class="chord">C</span><span class="chord">G</span><span class="chord">Ami</span><span class="chord">F</span><span class="chord">C</span><span class="chord">G</span><span class="chord">Ami</span><span class="chord">F</span><span class="chord">G</span><span class="chord">E7</span>
             </pre>
 <pre class="song-line"><span class="chord">F</span> <span class="chord">C</span> <span class="chord">G</span> <span class="chord">C</span>    <span class="chord">F</span> <span class="chord">C</span> <span class="chord">G</span> <span class="chord">C</span>
                   </pre>
 </div>
-<div class="verse"><div class="verse-number">5.</div>
+<div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                   
 Vlastním tělem teď </pre>
 <pre class="song-line">                      
@@ -7535,11 +7550,11 @@ Můj vlak však jede na opačnou stranu </pre>
 <pre class="song-line">                              <span class="chord">Dmi</span>   
 a moje jízdenka je dávno neplatná </pre>
 </div>
-<div class="verse"><div class="verse-number">2.</div>
+<div class="verse">
 <pre class="song-line"><span class="chord">F</span>  <span class="chord">Dmi</span>    <span class="chord">F</span>  <span class="chord">Dmi</span>
             </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                               
 Někde ve vzpomínkách stojí dům </pre>
 <pre class="song-line">                                   
@@ -7549,7 +7564,7 @@ V tom domě pro mě prostřený stůl </pre>
 <pre class="song-line">                     
 Tam já a moje rodina </pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                              
 Moje minulost se na mě šklebí </pre>
 <pre class="song-line">                               
@@ -7573,7 +7588,7 @@ Nemám cíl ani směr </pre>
 <pre class="song-line">        <span class="chord">B</span>       <span class="chord">C</span>       <span class="chord">A7</span>                  
 Vezu se odnikud nikam a nevím, kde skončím </pre>
 </div>
-<div class="verse"><div class="verse-number">5.</div>
+<div class="verse"><div class="verse-number">4.</div>
 <pre class="song-line">                                
 Mám to všechno na barevný fotce </pre>
 <pre class="song-line">                         
@@ -7655,11 +7670,11 @@ Jdou, jdou… </pre>
 <div class="song" id="song-116">
 <h2>116. Čtyři slunce</h2>
 <p><i>Vypsaná fixa</i></p>
-<div class="verse"><div class="verse-number">1.</div>
-<pre class="song-line"><span class="chord">Emi C G D</span>        
- \rep{4} </pre>
+<div class="verse">
+<pre class="song-line"><span class="chord">Emi C G D</span> 
+  </pre>
 </div>
-<div class="verse"><div class="verse-number">2.</div>
+<div class="verse"><div class="verse-number">1.</div>
 <pre class="song-line"><span class="chord">Emi</span>     <span class="chord">C</span>      <span class="chord">G</span>       <span class="chord">D</span>         <span class="chord">Emi</span>   <span class="chord">C</span> <span class="chord">G</span> <span class="chord">D</span>
 Čtyři slunce svítěj pro radost,         </pre>
 <pre class="song-line"><span class="chord">Emi</span>     <span class="chord">C</span>     <span class="chord">G</span>      <span class="chord">D</span>            <span class="chord">Emi</span>   <span class="chord">C</span> <span class="chord">G</span> <span class="chord">D</span>
@@ -7679,11 +7694,11 @@ Já vím,  někdy to nejde.   </pre>
 <pre class="song-line">   <span class="chord">Emi</span>    <span class="chord">C</span>           <span class="chord">Ami</span>      <span class="chord">D</span> <span class="chord">Dsus4</span>
 Já vím,  všechno to přejde.   </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse">
 <pre class="song-line"><span class="chord">Emi C G D 4x</span>
  </pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                                
 Čtyři slunce svítěj pro radost, </pre>
 <pre class="song-line">                                
@@ -7703,11 +7718,11 @@ Já vím, někdy to nejde </pre>
 <pre class="song-line">                          
 já vím, všechno to přejde </pre>
 </div>
-<div class="verse"><div class="verse-number">5.</div>
+<div class="verse">
 <pre class="song-line"><span class="chord">Emi C G D 4x</span>
  </pre>
 </div>
-<div class="verse"><div class="verse-number">6.</div>
+<div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                                
 Čtyři slunce svítěj pro radost, </pre>
 <pre class="song-line">                                  
@@ -7731,7 +7746,7 @@ Já vím, někdy to nejde </pre>
 <pre class="song-line">                           
 já vím, všechno to přejde. </pre>
 </div>
-<div class="verse"><div class="verse-number">7.</div>
+<div class="verse"><div class="verse-number">4.</div>
 <pre class="song-line">                                
 Čtyři slunce svítěj pro radost, </pre>
 <pre class="song-line">                                  
@@ -7795,8 +7810,8 @@ Na chvíli zavřít oči... </pre>
 <div class="chorus"><span class="label">R:</span><br>
 <pre class="song-line">                            
 Nad hlavou je můj svět, ... </pre>
-<pre class="song-line">                                                                    
-...Je to pravda, bludnej kruh, já se chci vznášet nad zemí. \rep{2} </pre>
+<pre class="song-line">                                                             
+...Je to pravda, bludnej kruh, já se chci vznášet nad zemí.  </pre>
 </div>
 <div class="back-to-top"><a href="#top">↑ Nahoru</a></div>
 </div>
@@ -8298,8 +8313,8 @@ keď som ťa pozval na rum a čaj. </pre>
 Stoj! Nechoď nikam! Čo je? Hej! I’m sorry, I’m really Gay. </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
-<pre class="song-line"><span class="chord">A</span>                   <span class="chord">E</span>    <span class="chord">G</span>                   <span class="chord">D</span>            
-Lesbian’s and Gay’s song Lesbian’s and Gay’s song \rep{2} </pre>
+<pre class="song-line"><span class="chord">A</span>                   <span class="chord">E</span>    <span class="chord">G</span>                   <span class="chord">D</span>     
+Lesbian’s and Gay’s song Lesbian’s and Gay’s song  </pre>
 </div>
 <div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                             
@@ -8320,8 +8335,8 @@ Ja takýmto veciam rozumiem. </pre>
 I’m sorry… ale veď ja viem - Lesbian </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
-<pre class="song-line">                                                           
-Lesbian’s and Gay’s song  Lesbian’s and Gay’s song \rep{2} </pre>
+<pre class="song-line">                                                    
+Lesbian’s and Gay’s song  Lesbian’s and Gay’s song  </pre>
 </div>
 <div class="back-to-top"><a href="#top">↑ Nahoru</a></div>
 </div>
@@ -8661,8 +8676,8 @@ A tou je a tou je a tou je zanedbaný sex. </pre>
 Óóóó … </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
-<pre class="song-line">                      
-Mám to rád... \rep{2} </pre>
+<pre class="song-line">               
+Mám to rád...  </pre>
 </div>
 <div class="back-to-top"><a href="#top">↑ Nahoru</a></div>
 </div>
@@ -8747,8 +8762,8 @@ Pevně se držte já řeknu vám </pre>
 je to ta nejhorší nemoc kterou znám </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
-<pre class="song-line"><span class="chord">H</span>     <span class="chord">A</span>          <span class="chord">E</span>           
-Žízeň a ja ja ja jaj \rep{4} </pre>
+<pre class="song-line"><span class="chord">H</span>     <span class="chord">A</span>          <span class="chord">E</span>    
+Žízeň a ja ja ja jaj  </pre>
 </div>
 <div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                                   
@@ -8998,8 +9013,8 @@ My máme silný refrén...</pre>
 <div class="chorus"><span class="label">R:</span><br>
 <pre class="song-line">     <span class="chord">G</span>         <span class="chord">Hmi</span>    <span class="chord">E</span>      
 [: uuuuuuuuuua ou jeeee :] </pre>
-<pre class="song-line">                             
-Máme silný refrén... \rep{2} </pre>
+<pre class="song-line">                      
+Máme silný refrén...  </pre>
 </div>
 <div class="back-to-top"><a href="#top">↑ Nahoru</a></div>
 </div>
@@ -9085,8 +9100,8 @@ brácho, ještě můžem. </pre>
 <div class="verse"><div class="verse-number">6.</div>
 <pre class="song-line">
 </pre>
-<pre class="song-line">                        
-Brácho (brácho) \rep{3} </pre>
+<pre class="song-line">                 
+Brácho (brácho)  </pre>
 </div>
 <div class="verse">
 <pre class="song-line"><span class="chord">C</span>                
@@ -9594,8 +9609,8 @@ Záleží na každym </pre>
 Kdo jak si to namíchá </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
-<pre class="song-line">                            
-V pekle sudy válej… \rep{2} </pre>
+<pre class="song-line">                     
+V pekle sudy válej…  </pre>
 </div>
 <div class="back-to-top"><a href="#top">↑ Nahoru</a></div>
 </div>
@@ -9666,7 +9681,7 @@ S touhle jedinou bych zemřel. </pre>
 <pre class="song-line">                      
 S touhle bych zemřel… </pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse">
 <pre class="song-line">        <span class="chord">Emi</span>               <span class="chord">G</span>       
 Budu si pamatovat na tu chvíli, </pre>
 <pre class="song-line">           <span class="chord">C</span>                <span class="chord">H7</span>    
@@ -9907,8 +9922,8 @@ Taky se naparujou </pre>
 A hlavně u mně v domě. </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
-<pre class="song-line">                        
-Párujou se dál… \rep{2} </pre>
+<pre class="song-line">                 
+Párujou se dál…  </pre>
 </div>
 <div class="back-to-top"><a href="#top">↑ Nahoru</a></div>
 </div>
@@ -10035,8 +10050,8 @@ my plníme plány, </pre>
 rostou nám blány. </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
-<pre class="song-line">                   
-Mám rád... \rep{2} </pre>
+<pre class="song-line">            
+Mám rád...  </pre>
 </div>
 <div class="back-to-top"><a href="#top">↑ Nahoru</a></div>
 </div>
@@ -10122,8 +10137,8 @@ Na vlnách slunce zářící </pre>
 v Madridu zpívaj slavíci. </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
-<pre class="song-line">                                
-Cerveza, rock’n’roll... \rep{2} </pre>
+<pre class="song-line">                         
+Cerveza, rock’n’roll...  </pre>
 </div>
 <div class="back-to-top"><a href="#top">↑ Nahoru</a></div>
 </div>
@@ -10235,7 +10250,7 @@ co se zas stalo, co je zas s dědou? </pre>
 <pre class="song-line">                                   
 Chci ještě vidět jeho kadeř šedou. </pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse">
 <pre class="song-line">                              
 \emph{Ježiši, tak kde zas je? </pre>
 <pre class="song-line">                        
@@ -10247,7 +10262,7 @@ Jestlis ho zase ztratil, já ti dalšího kupovat nebudu!} </pre>
 <pre class="song-line">                
 Hledá se děda...</pre>
 </div>
-<div class="verse"><div class="verse-number">5.</div>
+<div class="verse"><div class="verse-number">4.</div>
 <pre class="song-line">    
 = 3.</pre>
 </div>
@@ -10339,8 +10354,8 @@ koukněte na tu potvoru, </pre>
 mám dojem, že to dobře neskončí. </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
-<pre class="song-line">                    
-Jó většina… \rep{2} </pre>
+<pre class="song-line">             
+Jó většina…  </pre>
 </div>
 <div class="back-to-top"><a href="#top">↑ Nahoru</a></div>
 </div>
@@ -10577,13 +10592,13 @@ a já nikdy nezapomínám. :] </pre>
 <div class="song" id="song-158">
 <h2>158. 1982</h2>
 <p><i>Vypsaná fixa</i></p>
-<div class="verse"><div class="verse-number">1.</div>
+<div class="verse">
 <pre class="song-line"><span class="chord">E C E C#</span>
  </pre>
 <pre class="song-line"><span class="chord">E A F# H</span>
  </pre>
 </div>
-<div class="verse"><div class="verse-number">2.</div>
+<div class="verse"><div class="verse-number">1.</div>
 <pre class="song-line"><span class="chord">E</span>         <span class="chord">C</span>      <span class="chord">E</span>         <span class="chord">C#</span>      
 Chlapeček brečí, nesmíš ho hladit </pre>
 <pre class="song-line"><span class="chord">E</span>             <span class="chord">A</span>       <span class="chord">F#</span>            <span class="chord">H</span>     
@@ -10609,7 +10624,7 @@ devatenátsetosmdesátdva - brutální všechno, nejlepší vzpomínky </pre>
 <pre class="song-line">                                                         
 devatenátsetosmdesátdva - nejlepší nohy maminky, maminky </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">     
 = 1. </pre>
 </div>
@@ -10734,7 +10749,7 @@ Přes den ne, </pre>
 <pre class="song-line">                 
 jenom po nocích. </pre>
 </div>
-<div class="verse"><div class="verse-number">9.</div>
+<div class="verse">
 <pre class="song-line">             
 Na oslavách, </pre>
 <pre class="song-line">                
@@ -10744,7 +10759,7 @@ Přes den ne, </pre>
 <pre class="song-line">                 
 jenom po nocích. </pre>
 </div>
-<div class="verse"><div class="verse-number">10.</div>
+<div class="verse"><div class="verse-number">9.</div>
 <pre class="song-line">   <span class="chord">A</span>                  <span class="chord">E</span>    
 [: Slibuju, že nebudu pít, </pre>
 <pre class="song-line">           <span class="chord">D</span>   
@@ -10880,7 +10895,7 @@ Za to, že umějí život dát </pre>
 Ani tisíce růží, </pre>
 <pre class="song-line">                <span class="chord">G</span>    
 jejich jména na kůži </pre>
-<pre class="song-line">            <span class="chord">C</span> <span class="chord">~~G</span>
+<pre class="song-line">            <span class="chord">C</span> <span class="chord">  G</span>
 Né to nestačí  </pre>
 </div>
 <div class="verse"><div class="verse-number">2.</div>
@@ -10896,7 +10911,7 @@ Kam v ložnici lampu dát. </pre>
 Chtěl bych vidět jak záříš </pre>
 <pre class="song-line">            <span class="chord">G</span>         
 V lednu o v září šššš </pre>
-<pre class="song-line">              <span class="chord">C</span>     <span class="chord">~~G</span>
+<pre class="song-line">              <span class="chord">C</span>     <span class="chord">  G</span>
 Jó to bych si přál.  </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
@@ -11067,7 +11082,7 @@ s láskou se vůní brodíme, </pre>
 <pre class="song-line"><span class="chord">C</span>                    <span class="chord">D</span>                    <span class="chord">C</span>    
 postelový království za koně nechce se mi dát, </pre>
 </div>
-<div class="verse"><div class="verse-number">2.</div>
+<div class="verse">
 <pre class="song-line"><span class="chord">C</span>           <span class="chord">D</span>             <span class="chord">Emi</span>    
 jsem na tom stejně mám tě rád, </pre>
 <pre class="song-line"><span class="chord">C</span>        <span class="chord">D</span>              
@@ -11079,7 +11094,7 @@ mersi, ó mersi, tak opustit zoufalců ráj, </pre>
 <pre class="song-line"><span class="chord">D</span>               <span class="chord">Emi</span>     
 chci zas v tobě spát. </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line"><span class="chord">Emi</span>                             <span class="chord">C</span>          
 Říkáš, že svět je krásnej, svět je zlej, </pre>
 <pre class="song-line"><span class="chord">Ami</span>                      <span class="chord">C</span>           <span class="chord">D</span>    
@@ -11093,7 +11108,7 @@ hledá pravdu, rodí, neví, nesvlíká se lásko </pre>
 <pre class="song-line">                      
 A hrubý síly vzývám...</pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line"><span class="chord">Emi</span>                            <span class="chord">C</span>                               
 sami se proti vlnám stavíme, sami se chcem zbavit těch pout, </pre>
 <pre class="song-line"><span class="chord">Emi</span>                         <span class="chord">C</span>                          
@@ -11116,11 +11131,11 @@ Jsem na tom… </pre>
 <pre class="song-line"><span class="chord">G</span>          <span class="chord">D</span>            <span class="chord">Emi</span>             <span class="chord">C</span>         <span class="chord">G</span>     
 Když ráno  vstanu, tak  políbim svojí milovanou ženu. </pre>
 <pre class="song-line">                                                  
-Snídani do postele dám jí, a růži z~lásky k~tomu. </pre>
+Snídani do postele dám jí, a růži z lásky k tomu. </pre>
 <pre class="song-line">                                            
-Ještě umeju nádobí z~večeře a vydrhnu vanu. </pre>
-<pre class="song-line">                                              <span class="chord">D~~C~~G</span>
-Svačinu udělám si do práce a odcházim z~domu.  </pre>
+Ještě umeju nádobí z večeře a vydrhnu vanu. </pre>
+<pre class="song-line">                                              <span class="chord">D  C  G</span>
+Svačinu udělám si do práce a odcházim z domu.  </pre>
 <pre class="song-line">                  
 Mám skvělou ženu. </pre>
 </div>
@@ -11146,15 +11161,15 @@ Já jsem tak zamilovaný do ní, je překrásná. </pre>
 <pre class="song-line">        <span class="chord">D</span>                                     
 Já jsem tak nešťastná, já jsem tak nešťastná. </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse">
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                                                      
 V práci počítám minuty, kdy půjdu domů za svou ženou. </pre>
 <pre class="song-line">                     
 (Ať se sem nevrací.) </pre>
 <pre class="song-line">                                                    
-Těším se na to, až si napustíme plnou vanu s~pěnou. </pre>
+Těším se na to, až si napustíme plnou vanu s pěnou. </pre>
 <pre class="song-line">                        
 (Kterou fakt nesnáším.) </pre>
 <pre class="song-line">                                          
@@ -11309,7 +11324,7 @@ a vítr se{ řítí} do plachet{ nám.} </pre>
 <pre class="song-line">        <span class="chord">D</span>                    <span class="chord">A</span>         
 A já sem{ línej}, tak strašně{ línej}, </pre>
 <pre class="song-line">   <span class="chord">Hmi</span>                        <span class="chord">G</span>                <span class="chord">D</span>        
-tak{ prosím}, vodneste mě až{ k~nám}, ať~můžu{ spát.} </pre>
+tak{ prosím}, vodneste mě až{ k nám}, ať můžu{ spát.} </pre>
 <pre class="song-line"><span class="chord">D</span>                       
 Dneska velí týhle lodi, </pre>
 <pre class="song-line">                             <span class="chord">A</span>         
@@ -11538,11 +11553,11 @@ Tak mi napít dej… </pre>
 <div class="song" id="song-171">
 <h2>171. Opilci v dějinách</h2>
 <p><i>Kabát</i></p>
-<div class="verse"><div class="verse-number">1.</div>
+<div class="verse">
 <pre class="song-line"><span class="chord">H F#</span>
  </pre>
 </div>
-<div class="verse"><div class="verse-number">2.</div>
+<div class="verse"><div class="verse-number">1.</div>
 <pre class="song-line"><span class="chord">H</span>               
 Galileo Galilei </pre>
 <pre class="song-line">                     <span class="chord">C#</span>  <span class="chord">A</span>   
@@ -11556,7 +11571,7 @@ Tak nepište to prosím do kronik </pre>
 <pre class="song-line"><span class="chord">A</span>                       <span class="chord">G#</span>       
 vždyť já jsem obyčejnej notorik </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                         
 Já tenkrát šel z hospody </pre>
 <pre class="song-line">                                  
@@ -11576,7 +11591,7 @@ Nechte ho žít a zemřít von to tak vážně nemyslel  </pre>
 <pre class="song-line"><span class="chord">E</span>         <span class="chord">H</span>        <span class="chord">C#</span>          <span class="chord">F#</span>             <span class="chord">A</span>        <span class="chord">H</span>
 Nechte ho žít a zemřít  vždyť vlastně nic nevymyslel  </pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                                               
 Opilci v dějinách šli na všechno děsně vědecky </pre>
 <pre class="song-line">                                                
@@ -11586,11 +11601,11 @@ Pak stvořil hroznou definici </pre>
 <pre class="song-line">                                  
 dneska nikdo neví že byl po opici </pre>
 </div>
-<div class="verse"><div class="verse-number">5.</div>
+<div class="verse">
 <pre class="song-line"><span class="chord">H F#</span>
  </pre>
 </div>
-<div class="verse"><div class="verse-number">6.</div>
+<div class="verse"><div class="verse-number">4.</div>
 <pre class="song-line"><span class="chord">A</span>                                  
 Když padám tak rovnou dolu na hubu </pre>
 <pre class="song-line">                           
@@ -11775,7 +11790,7 @@ Je léto.. </pre>
 <p><i>Kabát</i></p>
 <div class="verse"><div class="verse-number">1.</div>
 <pre class="song-line"><span class="chord">F#mi</span>                <span class="chord">C#mi</span>            
-Vezmu tě má milá rovnou k~nám </pre>
+Vezmu tě má milá rovnou k nám </pre>
 <pre class="song-line"><span class="chord">F#mi</span>                  <span class="chord">C#mi</span>          
 Kolem louky, lesy, hejna vran </pre>
 <pre class="song-line"><span class="chord">F#mi</span>          <span class="chord">E</span>            <span class="chord">Hmi</span>   
@@ -11787,12 +11802,12 @@ Máme kino máme hospodu </pre>
 <pre class="song-line">                         
 V obci všeobecnou pohodu </pre>
 <pre class="song-line">                              
-Máme hujer, žito, chléb i~sůl </pre>
+Máme hujer, žito, chléb i sůl </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
 <pre class="song-line"><span class="chord">D</span>                    <span class="chord">A</span>                    <span class="chord">E</span>           <span class="chord">Hmi</span>       <br>Když se u nás chlapi poperou, <br> tak jenom nožem anebo sekerou </pre>
-<pre class="song-line">           <span class="chord">D</span>           <span class="chord">A</span>              <span class="chord">Hmi</span>                          <br>V zimě tam dlouhý noci jsou <br> a tuhej mráz (a~tam já to mám rád) </pre>
-<pre class="song-line"><span class="chord">D</span>                   <span class="chord">A</span>                    <span class="chord">E</span>            <span class="chord">Hmi</span>      <br>Jak jsou naše cesty zavátý, <br> tak vezmem vidle a~nebo lopaty </pre>
+<pre class="song-line">           <span class="chord">D</span>           <span class="chord">A</span>              <span class="chord">Hmi</span>                          <br>V zimě tam dlouhý noci jsou <br> a tuhej mráz (a tam já to mám rád) </pre>
+<pre class="song-line"><span class="chord">D</span>                   <span class="chord">A</span>                    <span class="chord">E</span>            <span class="chord">Hmi</span>      <br>Jak jsou naše cesty zavátý, <br> tak vezmem vidle a nebo lopaty </pre>
 <pre class="song-line">          <span class="chord">D</span>                <span class="chord">A</span>               <span class="chord">Hmi</span>   <br>když něco nejde, co na tom sejde <br> my máme čas </pre>
 </div>
 <div class="verse"><div class="verse-number">3.</div>
@@ -11844,11 +11859,11 @@ Když se u nás… </pre>
 <pre class="song-line"><span class="chord">D</span>                                  <span class="chord">G</span>       
 Tenkrát bylo veselo a dost málo se brečelo </pre>
 <pre class="song-line">                                          <span class="chord">D</span>       
-kdo nás znal ten se smál prstem si klepal na~čelo </pre>
+kdo nás znal ten se smál prstem si klepal na čelo </pre>
 <pre class="song-line">                                              
-život bežel pozpátku a všechno bylo v~pořádku </pre>
+život bežel pozpátku a všechno bylo v pořádku </pre>
 <pre class="song-line">                                      
-holky se nebály já je kousal do~zadku </pre>
+holky se nebály já je kousal do zadku </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
 <pre class="song-line">   <span class="chord">C</span>            <span class="chord">G</span>     <span class="chord">D</span>                   
@@ -11858,15 +11873,15 @@ To čert na koze jel bejky pěstí zabíjel </pre>
 <pre class="song-line">                                          
 To čert na koze jel my honili jsme mamuty </pre>
 <pre class="song-line">   <span class="chord">C</span>            <span class="chord">G</span>                           <span class="chord">D</span>
-to čert na koze jel a já byl ješte při~chuti </pre>
+to čert na koze jel a já byl ješte při chuti </pre>
 </div>
 <div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                                               
-Jó tenkrát slovo platilo a za lhaní se~mlátilo </pre>
+Jó tenkrát slovo platilo a za lhaní se mlátilo </pre>
 <pre class="song-line">                                         
 Do hlavy kamenem no špatne se nám nežilo </pre>
 <pre class="song-line">                                              
-My pro samou legraci jsme neměli čas na~práci </pre>
+My pro samou legraci jsme neměli čas na práci </pre>
 <pre class="song-line">                                       
 a pro ty nezvané tu stály mosty padací </pre>
 </div>
@@ -11876,13 +11891,13 @@ To čert na koze jel... </pre>
 </div>
 <div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                                             
-Rada starších sedící když nebylo co na~lžíci </pre>
+Rada starších sedící když nebylo co na lžíci </pre>
 <pre class="song-line">                                        
 Dostali do řepy my hnali jsme je palicí </pre>
 <pre class="song-line">                                               
-Tak proto nám to klapalo, že na kecy se~nedalo </pre>
+Tak proto nám to klapalo, že na kecy se nedalo </pre>
 <pre class="song-line">                                           
-Krávy pivo dávaly a prase v~chlívě větralo </pre>
+Krávy pivo dávaly a prase v chlívě větralo </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
 <pre class="song-line">                             
@@ -11917,7 +11932,7 @@ a já to vím, tak co teď s tím, chci vrátit čas </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
 <pre class="song-line"><span class="chord">C</span>             <span class="chord">G</span>      <span class="chord">D</span>                  
-pár hloupejch fíglů, ty mu na~to skočíš </pre>
+pár hloupejch fíglů, ty mu na to skočíš </pre>
 <pre class="song-line"><span class="chord">A</span>                         <span class="chord">Emi</span>   
 za pár dní to chlápka otráví. </pre>
 </div>
@@ -11947,11 +11962,11 @@ Znám jen pár fíglů… </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
 <pre class="song-line">                                                        
-Zná jen pár fíglů, jak se valej holkám šrouby do~hlavy, </pre>
+Zná jen pár fíglů, jak se valej holkám šrouby do hlavy, </pre>
 <pre class="song-line">                                        
 pár známejch fíglů, já tu ve tmě házím, </pre>
 <pre class="song-line">                                            
-já tu ve tmě házím zapálený sirky do~trávy. </pre>
+já tu ve tmě házím zapálený sirky do trávy. </pre>
 </div>
 <div class="back-to-top"><a href="#top">↑ Nahoru</a></div>
 </div>
@@ -11980,7 +11995,7 @@ jsi prezident a já tvé spojené státy. </pre>
 </div>
 <div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                                             
-Přines jsem ti kytku, no co koukáš, to se~má </pre>
+Přines jsem ti kytku, no co koukáš, to se má </pre>
 <pre class="song-line">                                             
 je to koruna žvejkačkou ke špejli přilepená, </pre>
 <pre class="song-line">                                                
@@ -11996,9 +12011,9 @@ Jsi lokomotiva... </pre>
 <pre class="song-line">                                             
 Každej příběh má svůj konec, ale né ten náš, </pre>
 <pre class="song-line">                                                
-nám to bude navždy dojit, všude kam se~podíváš, </pre>
+nám to bude navždy dojit, všude kam se podíváš, </pre>
 <pre class="song-line">                                                    
-naše kachny budou zlato nosit a krmit~se popcornem, </pre>
+naše kachny budou zlato nosit a krmit se popcornem, </pre>
 <pre class="song-line">                                                
 já to každej večer spláchnu půlnočním expresem. </pre>
 </div>
@@ -12014,11 +12029,11 @@ ve stopadesáti letech ho budu mít stále jako slon, </pre>
 <pre class="song-line">                                                     
 a ty neztratíš svoji krásu, stále štíhlá kolem pasu, </pre>
 <pre class="song-line">                                                      
-stále dokážeš mě chytit lasem a přitáhnout na~terasu. </pre>
+stále dokážeš mě chytit lasem a přitáhnout na terasu. </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
-<pre class="song-line">                          
-Jsi lokomotiva... \rep{3} </pre>
+<pre class="song-line">                   
+Jsi lokomotiva...  </pre>
 <pre class="song-line">       <span class="chord">G</span>   
 + já a ty. </pre>
 </div>
@@ -12086,8 +12101,8 @@ Bereme všechno, zlato i šperky </pre>
 Vstávat vy bando prašivá, támhle je loď! </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
-<pre class="song-line">                      
-Já, to se ví… \rep{2} </pre>
+<pre class="song-line">               
+Já, to se ví…  </pre>
 </div>
 <div class="back-to-top"><a href="#top">↑ Nahoru</a></div>
 </div>
@@ -12157,13 +12172,13 @@ A nový stíny, a nový stíny vyplaší </pre>
 <div class="song" id="song-180">
 <h2>180. Známka punku</h2>
 <p><i>Visací Zámek</i></p>
-<div class="verse"><div class="verse-number">1.</div>
-<pre class="song-line"><span class="chord">E~~D~~A~~G~</span>
+<div class="verse">
+<pre class="song-line"><span class="chord">E  D  A  G </span>
  </pre>
-<pre class="song-line"><span class="chord">E~~D~~A~~F#~~G</span>
+<pre class="song-line"><span class="chord">E  D  A  F#  G</span>
  </pre>
 </div>
-<div class="verse"><div class="verse-number">2.</div>
+<div class="verse"><div class="verse-number">1.</div>
 <pre class="song-line"><span class="chord">E</span>       <span class="chord">D</span>     <span class="chord">A</span>       <span class="chord">G</span> <span class="chord">F#</span>    
 Holinky nosil vždycky naruby </pre>
 <pre class="song-line">                                   
@@ -12191,7 +12206,7 @@ Ale holky říkaly </pre>
 <pre class="song-line">               <span class="chord">D</span>   
 To snad není možný </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                                         
 Přeplněnej autobus nechával vždycky ujet </pre>
 <pre class="song-line">                                   
@@ -12227,7 +12242,7 @@ Boží nadělení </pre>
 <pre class="song-line">                           
 Každé zboží má svého kupce </pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                             
 Křivák nosila vždycky naruby </pre>
 <pre class="song-line">                                 
@@ -12256,21 +12271,21 @@ No to snad není možný </pre>
 <p><i>Divokej Bill</i></p>
 <div class="verse"><div class="verse-number">1.</div>
 <pre class="song-line"><span class="chord">C</span>                   <span class="chord">G</span>    <span class="chord">F</span>                   <span class="chord">C</span>     
-Žiju si jako v pohádce, když nechci nejdu do~práce </pre>
+Žiju si jako v pohádce, když nechci nejdu do práce </pre>
 <pre class="song-line">               <span class="chord">G</span>      <span class="chord">F</span>               <span class="chord">C</span>    
 venku se pasou ovce, dělá si každá co chce </pre>
 <pre class="song-line">                   <span class="chord">G</span>      <span class="chord">F</span>         <span class="chord">C</span>      
-Pošeptáš mi co tě láká a to je pro~čmeláka </pre>
+Pošeptáš mi co tě láká a to je pro čmeláka </pre>
 <pre class="song-line">                            <span class="chord">G</span>             <span class="chord">F</span>            <span class="chord">C</span>      
 co broukal si v klidu svůj part, najednou malá louka a start. </pre>
 </div>
 <div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                                                        
-Tak žijem jako v pohádce když, nechcem nejdem do~práce, </pre>
+Tak žijem jako v pohádce když, nechcem nejdem do práce, </pre>
 <pre class="song-line">                                         
 a to nechcem nikdy, venku se pasou krávy </pre>
 <pre class="song-line">                                     
-šeptáš co tě láká, to je pro~čmeláka </pre>
+šeptáš co tě láká, to je pro čmeláka </pre>
 <pre class="song-line">                                                    
 co broukal v klidu svůj part, najednou malá louka a </pre>
 </div>
@@ -12317,7 +12332,7 @@ Já nic, já muzikant… </pre>
 <p><i>Wohnout</i></p>
 <div class="chorus"><span class="label">R:</span><br>
 <pre class="song-line"><span class="chord">G</span>                     <span class="chord">Dmi</span>                         <span class="chord">Ami</span>   <br>Vracím se domů nad ránem, <br> kvalitním vínem omámen, </pre>
-<pre class="song-line">                       <span class="chord">F</span>              <span class="chord">C</span>                  <span class="chord">G</span>  <br>z přímek se stávaj zatáčky, <br> točí se~svět, jsem na~sračky. </pre>
+<pre class="song-line">                       <span class="chord">F</span>              <span class="chord">C</span>                  <span class="chord">G</span>  <br>z přímek se stávaj zatáčky, <br> točí se svět, jsem na sračky. </pre>
 <pre class="song-line">                                                       <br>Vedle mě zvrací princezna, <br> nastavím dlaň a požehnám, </pre>
 <pre class="song-line">                                                          <br>pro všechny jasný poselství <br> -- tomu se říká přátelství. </pre>
 </div>
@@ -12325,17 +12340,17 @@ Já nic, já muzikant… </pre>
 <pre class="song-line">                                      
 Mám tisíc otázek na žádnou vzpomínku, </pre>
 <pre class="song-line">                                     
-skládám si obrázek kámen po~kamínku. </pre>
+skládám si obrázek kámen po kamínku. </pre>
 <pre class="song-line">                                    
-Včerejší produkce šla do~bezvědomí, </pre>
+Včerejší produkce šla do bezvědomí, </pre>
 <pre class="song-line">                                   
-nastává dedukce, co na~to svědomí. </pre>
+nastává dedukce, co na to svědomí. </pre>
 </div>
 <div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                                         
-A už si vzpomínám, já byl jsem na~srazu, </pre>
+A už si vzpomínám, já byl jsem na srazu, </pre>
 <pre class="song-line">                                       
-s kumpány který mám, patříme do~svazu, </pre>
+s kumpány který mám, patříme do svazu, </pre>
 <pre class="song-line">                                        
 vlastníme doménu, tak si nás rozklikni, </pre>
 <pre class="song-line">                  <span class="chord">F</span>   
@@ -12347,13 +12362,13 @@ Vracím se… </pre>
 </div>
 <div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                                      
-Stačí pár večírků, společně s~bohémy, </pre>
+Stačí pár večírků, společně s bohémy, </pre>
 <pre class="song-line">                                        
-za kterými se táhnou od~školy problémy. </pre>
+za kterými se táhnou od školy problémy. </pre>
 <pre class="song-line">                                    
 V partě je Blekota, Jekota, Mekota, </pre>
 <pre class="song-line">                                     
-dost často hovoříme o~smyslu života. </pre>
+dost často hovoříme o smyslu života. </pre>
 </div>
 <div class="verse"><div class="verse-number">4.</div>
 <pre class="song-line">                                     
@@ -12375,7 +12390,7 @@ Svět zrychluje svý otáčky, sousedka peče koláčky. </pre>
 <pre class="song-line">                                                   
 Hlášen stav nouze nejvyšší, Hapkové volaj Horáčky. </pre>
 <pre class="song-line">                                              
-Zástupy českejch bohému, vyráží ven do~terénů </pre>
+Zástupy českejch bohému, vyráží ven do terénů </pre>
 <pre class="song-line">                                                
 šavlí z kvalitního vína, bojovat proti systému. </pre>
 </div>
@@ -12412,7 +12427,7 @@ Nic není jako dřív, to se nám to mívávalo. </pre>
 <pre class="song-line">                                                              
 Nic není jako dřív, ačkoliv máš všechno co si vždycky chtěla. </pre>
 <pre class="song-line">                                                        
-Nic není jako dřív, ačkoliv drobná paralela by tu~byla. </pre>
+Nic není jako dřív, ačkoliv drobná paralela by tu byla. </pre>
 </div>
 <div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                               
@@ -12420,7 +12435,7 @@ Snad nevěříš na tajný znamení. </pre>
 <pre class="song-line">                                            
 Všechno to harampádí -- balábile -- mámení. </pre>
 <pre class="song-line">                                     
-Vážení platící, jak všeobecně ví~se, </pre>
+Vážení platící, jak všeobecně ví se, </pre>
 <pre class="song-line">                                     
 včera i dneska, stále ta samá píseň. </pre>
 </div>
@@ -12446,7 +12461,7 @@ Nic není jako dřív, jó, to se nám to dlouze kouřívalo. </pre>
 <pre class="song-line">                                                            
 Bohužel bohudík je s námi, ta nenahmatatelná intimita těla. </pre>
 <pre class="song-line">                                                         
-Nic není jako dřív, jen fámy, bla-bla-bla-bla et~cetera. </pre>
+Nic není jako dřív, jen fámy, bla-bla-bla-bla et cetera. </pre>
 <pre class="song-line">                                            
 Nic není jako dřív, nic není jak bejvávalo, </pre>
 <pre class="song-line">                                                         
@@ -12468,7 +12483,7 @@ Hlavní je neuhnout, dobře zvolit svůj směr, </pre>
 a teď holka musim jít až tam na sever. </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
-<pre class="song-line">      <span class="chord">G</span>       <span class="chord">C,~G,~Emi,~D,~G</span>
+<pre class="song-line">      <span class="chord">G</span>       <span class="chord">C, G, Emi, D, G</span>
 Cestu znám...  </pre>
 </div>
 <div class="verse"><div class="verse-number">2.</div>
@@ -12615,11 +12630,11 @@ usmál se a tiše povídá </pre>
 <pre class="song-line"><span class="chord">G</span>             <span class="chord">D</span>        
 Všechno je sranda  jen </pre>
 <pre class="song-line"><span class="chord">F</span>                      <span class="chord">E</span>          
-dokud tarantule neleze v~trenkách </pre>
+dokud tarantule neleze v trenkách </pre>
 <pre class="song-line"><span class="chord">G</span>             <span class="chord">D</span>     
 milujem se navzájem </pre>
 <pre class="song-line"><span class="chord">F</span>                      <span class="chord">E</span>          
-dokud tarantule neleze v~tránkach </pre>
+dokud tarantule neleze v tránkach </pre>
 </div>
 <div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                                
@@ -12706,7 +12721,7 @@ Writing my poems for the few </pre>
 <pre class="song-line">                  <span class="chord">E</span>                                   
 That looked at me took to me, shook to me, feeling me </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse">
 <pre class="song-line">                                      
 Singing from heart ache from the pain </pre>
 <pre class="song-line">                                  
@@ -12728,7 +12743,7 @@ My life, my love, my drive, it came from... </pre>
 <pre class="song-line"><span class="chord">Ami</span>                                    <span class="chord">F</span>         <span class="chord">E</span>      
 Pain! You made me a, you made me a believer, believer </pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                   
 Third things third </pre>
 <pre class="song-line">                                   
@@ -12748,7 +12763,7 @@ Falling like ashes to the ground </pre>
 <pre class="song-line">                                     
 Hoping my feelings, they would drown </pre>
 </div>
-<div class="verse"><div class="verse-number">5.</div>
+<div class="verse">
 <pre class="song-line">                                                   
 But they never did, ever lived, ebbing and flowing </pre>
 <pre class="song-line">                   
@@ -12762,7 +12777,7 @@ It rained down, like… </pre>
 <pre class="song-line">        
 Pain... </pre>
 </div>
-<div class="verse"><div class="verse-number">6.</div>
+<div class="verse"><div class="verse-number">4.</div>
 <pre class="song-line">                 
 Last things last </pre>
 <pre class="song-line">                                        
@@ -12772,7 +12787,7 @@ You’re the face of the future, the blood in my veins, oh-ooh </pre>
 <pre class="song-line">                              
 The blood in my veins, oh-ooh </pre>
 </div>
-<div class="verse"><div class="verse-number">7.</div>
+<div class="verse"><div class="verse-number">5.</div>
 <pre class="song-line">                                                   
 But they never did, ever lived, ebbing and flowing </pre>
 <pre class="song-line">                   
@@ -12995,7 +13010,7 @@ Carry me home to see my kin </pre>
 <pre class="song-line">                                  
 Singing songs about the Southland </pre>
 <pre class="song-line">                                                  
-I miss Alabama once again (And I think its a~sin) </pre>
+I miss Alabama once again (And I think its a sin) </pre>
 </div>
 <div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                                         
@@ -13117,9 +13132,9 @@ One day my father…. </pre>
 <div class="chorus"><span class="label">R:</span><br>
 <pre class="song-line">                    
 He said, “One day…. </pre>
-<pre class="song-line"><span class="chord">A~~E~~B~~C#m~~B</span>
+<pre class="song-line"><span class="chord">A  E  B  C#m  B</span>
  </pre>
-<pre class="song-line"><span class="chord">A~~E</span>
+<pre class="song-line"><span class="chord">A  E</span>
  </pre>
 </div>
 <div class="verse"><div class="verse-number">Outro:</div>
@@ -13275,9 +13290,9 @@ And show me how to be whole again </pre>
 Cause I’m…. </pre>
 </div>
 <div class="verse"><div class="verse-number">Interlude:</div>
-<pre class="song-line"><span class="chord">Fmaj7~~C~~G~~D~~Am~~~~~~Am</span>
+<pre class="song-line"><span class="chord">Fmaj7  C  G  D  Am      Am</span>
  </pre>
-<pre class="song-line"><span class="chord">Fmaj7~~C~~G~~D~~Am~~~~~~Am</span>
+<pre class="song-line"><span class="chord">Fmaj7  C  G  D  Am      Am</span>
  </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
@@ -13741,7 +13756,7 @@ there will be an answer let it be. </pre>
 <div class="chorus"><span class="label">R:</span><br>
 <pre class="song-line">                                        
 Let it be let it be let it be let it be </pre>
-<pre class="song-line">                                   <span class="chord">F~C~G~F~C</span>
+<pre class="song-line">                                   <span class="chord">F C G F C</span>
 whisper words of wisdom let it be.  </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
@@ -13773,7 +13788,7 @@ there will be an answer let it be. </pre>
 <div class="chorus"><span class="label">R:</span><br>
 <pre class="song-line">                                        
 Let it be let it be let it be let it be </pre>
-<pre class="song-line">                                  <span class="chord">F~C~G~F~C</span>
+<pre class="song-line">                                  <span class="chord">F C G F C</span>
 whisper words of wisdom let it be. </pre>
 </div>
 <div class="back-to-top"><a href="#top">↑ Nahoru</a></div>
@@ -13883,7 +13898,7 @@ I take a part of you with me now and you won’t get it back </pre>
 And a part of me will stay here, </pre>
 <pre class="song-line">                              
 you can keep it forever, dear </pre>
-<pre class="song-line">      <span class="chord">D,~F</span>   
+<pre class="song-line">      <span class="chord">D, F</span>   
 Woouuoou… </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
@@ -13928,8 +13943,8 @@ Bye, bye</pre>
 <pre class="song-line">                                     
 Bye, bye Hollywood Hills I&#x27;m gonna...</pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
-<pre class="song-line">          <span class="chord">G</span>         <span class="chord">C</span>          <span class="chord">G,~Ami</span>
+<div class="verse">
+<pre class="song-line">          <span class="chord">G</span>         <span class="chord">C</span>          <span class="chord">G, Ami</span>
 Hollywood Hills forever, yeah,  </pre>
 <pre class="song-line">          <span class="chord">G</span>         <span class="chord">C</span>   
 Hollywood Hills forever </pre>
@@ -14040,11 +14055,11 @@ I’ll make you, face, this, now!!!! </pre>
 <div class="song" id="song-203">
 <h2>203. T.n.t</h2>
 <p><i>AC/DC</i></p>
-<div class="verse"><div class="verse-number">1.</div>
-<pre class="song-line"><span class="chord">E~G~A~G~A~G~E</span>
+<div class="verse">
+<pre class="song-line"><span class="chord">E G A G A G E</span>
  </pre>
 </div>
-<div class="verse"><div class="verse-number">2.</div>
+<div class="verse"><div class="verse-number">1.</div>
 <pre class="song-line">                              
 See me ride out of the sunset </pre>
 <pre class="song-line">                        
@@ -14063,7 +14078,7 @@ Ain’t got no gun </pre>
 Ain’t got no knife </pre>
 <pre class="song-line">                         
 Don’t you start no fight </pre>
-<pre class="song-line"><span class="chord">A~G~E</span>
+<pre class="song-line"><span class="chord">A G E</span>
  </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
@@ -14076,7 +14091,7 @@ T.N.T. I’m a power load </pre>
 <pre class="song-line">                           
 T.N.T. watch me explode!!! </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                                   
 I’m dirty, mean and mighty unclean </pre>
 <pre class="song-line">                 
@@ -14219,7 +14234,7 @@ To prove me wrong </pre>
 To wash this memory clean </pre>
 <pre class="song-line">        <span class="chord">Em</span>            
 Let the floods cross </pre>
-<pre class="song-line">    <span class="chord">G</span>                <span class="chord">D</span>   <span class="chord">Dsus4~~D</span>
+<pre class="song-line">    <span class="chord">G</span>                <span class="chord">D</span>   <span class="chord">Dsus4  D</span>
 The distance in your eyes </pre>
 <pre class="song-line">        <span class="chord">Emi</span>      
 Give me reason </pre>
@@ -14229,7 +14244,7 @@ To fill this hole </pre>
 Connect the space between </pre>
 <pre class="song-line">       <span class="chord">C</span>                                <span class="chord">D</span>    
 Let it be enough to reach the truth and lies </pre>
-<pre class="song-line"> <span class="chord">D</span>                   <span class="chord">Em</span><span class="chord">G~D~A</span>
+<pre class="song-line"> <span class="chord">D</span>                   <span class="chord">Em</span><span class="chord">G D A</span>
 Across this new divide </pre>
 </div>
 <div class="verse"><div class="verse-number">2.</div>
@@ -14283,11 +14298,11 @@ But I get what I deserve </pre>
 So give me… </pre>
 <pre class="song-line">        <span class="chord">C</span>                                <span class="chord">D</span>    
 …Let it be enough to reach the truth and lies </pre>
-<pre class="song-line"> <span class="chord">D</span>                 <span class="chord">Emi</span>  <span class="chord">~G~~D</span>
+<pre class="song-line"> <span class="chord">D</span>                 <span class="chord">Emi</span>  <span class="chord"> G  D</span>
 Across this new divide </pre>
-<pre class="song-line"> <span class="chord">A</span>                 <span class="chord">Emi</span>  <span class="chord">~G~~D</span>
+<pre class="song-line"> <span class="chord">A</span>                 <span class="chord">Emi</span>  <span class="chord"> G  D</span>
 Across this new divide </pre>
-<pre class="song-line"> <span class="chord">A</span>                 <span class="chord">Emi</span>  <span class="chord">~G~~D~~A~~Em</span>
+<pre class="song-line"> <span class="chord">A</span>                 <span class="chord">Emi</span>  <span class="chord"> G  D  A  Em</span>
 Across this new divide </pre>
 </div>
 <div class="back-to-top"><a href="#top">↑ Nahoru</a></div>
@@ -14320,11 +14335,11 @@ goin down, party time. </pre>
 my friends are gonna be there too. </pre>
 </div>
 <div class="chorus"><span class="label">R:</span><br>
-<pre class="song-line">         <span class="chord">A</span>          <span class="chord">D</span>    <span class="chord">G5~D</span>
+<pre class="song-line">         <span class="chord">A</span>          <span class="chord">D</span>    <span class="chord">G5 D</span>
 I’m on a highway to hell  </pre>
-<pre class="song-line">     <span class="chord">A</span>          <span class="chord">D</span>    <span class="chord">G5~D</span>
+<pre class="song-line">     <span class="chord">A</span>          <span class="chord">D</span>    <span class="chord">G5 D</span>
 on a highway to hell  </pre>
-<pre class="song-line"><span class="chord">A</span>          <span class="chord">D</span>    <span class="chord">G5~D</span>
+<pre class="song-line"><span class="chord">A</span>          <span class="chord">D</span>    <span class="chord">G5 D</span>
 highway to hell  </pre>
 <pre class="song-line">         <span class="chord">A</span>          <span class="chord">D</span>    
 I’m on a highway to hell </pre>
@@ -14386,7 +14401,7 @@ Ear-ly in the morning! </pre>
 </div>
 <div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line">                                               
-[: Shave his belly with a rusty razor~:]~\rep3 </pre>
+[: Shave his belly with a rusty razor :] \rep3 </pre>
 <pre class="song-line">                       
 Ear-ly in the morning! </pre>
 </div>
@@ -14396,7 +14411,7 @@ Hooray… </pre>
 </div>
 <div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                                                              
-[: Tie him to the scuppers with the hose pipe on~him~:]~\rep3 </pre>
+[: Tie him to the scuppers with the hose pipe on him :] \rep3 </pre>
 <pre class="song-line">                       
 Ear-ly in the morning! </pre>
 </div>
@@ -14406,7 +14421,7 @@ Hooray… </pre>
 </div>
 <div class="verse"><div class="verse-number">4.</div>
 <pre class="song-line">                                                          
-[: Put him in the bed with the captains daughter~:]~\rep3 </pre>
+[: Put him in the bed with the captains daughter :] \rep3 </pre>
 <pre class="song-line">                       
 Ear-ly in the morning! </pre>
 </div>
@@ -14416,7 +14431,7 @@ Hooray… </pre>
 </div>
 <div class="verse"><div class="verse-number">5.</div>
 <pre class="song-line">                                                  
-[: Put him in a long boat till his sober~:]~\rep3 </pre>
+[: Put him in a long boat till his sober :] \rep3 </pre>
 <pre class="song-line">                       
 Ear-ly in the morning! </pre>
 </div>
@@ -14426,7 +14441,7 @@ Hooray… </pre>
 </div>
 <div class="verse"><div class="verse-number">6.</div>
 <pre class="song-line">                                                    
-[: That’s what we do with a drunken sailor~:]~\rep3 </pre>
+[: That’s what we do with a drunken sailor :] \rep3 </pre>
 <pre class="song-line">                       
 Ear-ly in the morning! </pre>
 </div>
@@ -14481,7 +14496,7 @@ Po nás nastane potopa </pre>
 <pre class="song-line">           
 Opijem se… </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse">
 <pre class="song-line">         
 Á á a a á</pre>
 <pre class="song-line">         
@@ -14491,7 +14506,7 @@ Opijem se… </pre>
 <pre class="song-line">           
 Opijem se… </pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                               
 Porušíme pečeť na hrdle flašky </pre>
 <pre class="song-line">                                 
@@ -14509,7 +14524,7 @@ Vždyť by bez nás nesplnili </pre>
 <pre class="song-line">                 
 Opijem se… \rep2 </pre>
 </div>
-<div class="verse"><div class="verse-number">5.</div>
+<div class="verse">
 <pre class="song-line">         
 Á á a a á</pre>
 <pre class="song-line">         
@@ -14834,11 +14849,11 @@ vona se tu přede všema svlíkla do naha. </pre>
 <div class="song" id="song-213">
 <h2>213. Líza a Wendy</h2>
 <p><i>Horkýže slíže</i></p>
-<div class="verse"><div class="verse-number">1.</div>
+<div class="verse">
 <pre class="song-line"><span class="chord">Hmi</span><span class="chord">G</span><span class="chord">D</span><span class="chord">A</span>
     </pre>
 </div>
-<div class="verse"><div class="verse-number">2.</div>
+<div class="verse"><div class="verse-number">1.</div>
 <pre class="song-line"><span class="chord">Hmi</span>                            <span class="chord">G</span>                   
 Vzišli z prachu Líza, Wendy, malé blšie plemená, </pre>
 <pre class="song-line"><span class="chord">D</span>                           <span class="chord">A</span>                 
@@ -14848,7 +14863,7 @@ Tam v dolných ženských partiách je veľkej slasti región. </pre>
 <pre class="song-line"><span class="chord">D</span>                         <span class="chord">A</span>                   
 Tam pristáli o druhej ráno letecky par avion. </pre>
 </div>
-<div class="verse"><div class="verse-number">3.</div>
+<div class="verse"><div class="verse-number">2.</div>
 <pre class="song-line"><span class="chord">Hmi</span>                           <span class="chord">G</span>              
 Pozri tú krásu Wendy, dva punkové víkendy, </pre>
 <pre class="song-line"><span class="chord">D</span>                           <span class="chord">A</span>             
@@ -14864,7 +14879,7 @@ V údolí ženských nôh </pre>
 <pre class="song-line"><span class="chord">D</span>                         <span class="chord">A</span>             
 Líza tiahne prériou a malá Wendy za ňou </pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse"><div class="verse-number">3.</div>
 <pre class="song-line">                                               
 Tri hodiny ráno Wendy vraví strašne zle mi je. </pre>
 <pre class="song-line">                                                  
@@ -14874,7 +14889,7 @@ Možno je to z toho chlastu, ľudia to mi nerobte. </pre>
 <pre class="song-line">                                                 
 Byť tak aspoň dákou krysou v tom budúcom živote… </pre>
 </div>
-<div class="verse"><div class="verse-number">5.</div>
+<div class="verse"><div class="verse-number">4.</div>
 <pre class="song-line">                                                    
 Čo?! Takže ja mám byť krysa?! Prosím ťa ukľudni sa, </pre>
 <pre class="song-line">                                                
@@ -14884,7 +14899,7 @@ No ja nechcem byť krysa!! Prosím ťa ukľudni sa, </pre>
 <pre class="song-line">                                                
 Zober si chlp zakry sa, zober si chlp zakry sa. </pre>
 </div>
-<div class="verse"><div class="verse-number">6.</div>
+<div class="verse"><div class="verse-number">5.</div>
 <pre class="song-line">                                           
 Sedem hodín ráno ležia vedľa seba nehybne. </pre>
 <pre class="song-line">                                                
@@ -15000,7 +15015,7 @@ sundala bych si punčocháče.“ </pre>
 <pre class="song-line">     
 \rep2</pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse">
 <pre class="song-line">       <span class="chord">G</span> <span class="chord">E</span>                            
 + punčocháče, punčocháče, punčocháče. </pre>
 </div>
@@ -16432,7 +16447,7 @@ Všichni se bavili...</pre>
 <pre class="song-line">                     
 Přes všechny iluze...</pre>
 </div>
-<div class="verse"><div class="verse-number">4.</div>
+<div class="verse">
 <pre class="song-line">                                                  
 Smála se a brečela, když na chvíli jsem odcházel, </pre>
 <pre class="song-line">                                             
