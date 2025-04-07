@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex">
   <title>Title</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="simple.css">
 </head>
 
@@ -19,10 +20,11 @@
         Zde se rozepiš.
     </main>
     <footer>
-      <p>IT oddělení FTK inženýring s.r.o 2025</p>
-      <img src="ftk-logo.png" alt="FTK logo" width="50px" height="auto"
-            style="display: block; margin: 0 auto; opacity: 0.4;" >
-    </footer>
+    <p>IT oddělení FTK inženýring s.r.o 2025</p>
+    <img src="ftk-logo.png" alt="FTK logo" width="60px" height="auto" style="opacity: 0.4; padding-right: 10px;"><img
+      src="cyfernik-logo.png" alt="Cyferník logo" width="60px" height="auto" style="opacity: 0.4; padding-left: 10px;">
+    </p>
+  </footer>
   </body>
   
   </html>
