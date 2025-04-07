@@ -7,6 +7,13 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="styles.css">
   <style>
+    @font-face {
+      font-family: 'Bahnschrift';
+      src: url('bahnschrift.woff2') format('woff2'),
+           url('bahnschrift.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
     body {
       font-family: sans-serif;
       background-color: #000000;
@@ -17,7 +24,7 @@
       margin-right: auto;
     }
     a { color:rgb(255, 166, 0); }
-    h1, h2 { color: #ffffff; font-family: bahnschrift; }
+    h1, h2 { color: #ffffff; font-family: 'Bahnschrift', sans-serif; }
     h1 { text-align: center; }
     h2 { margin-top: 2.5em; }
     .verse, .chorus { margin: 1em 0; }
@@ -55,7 +62,7 @@
         padding: 0.5em;
         border-radius: 0.3em;
         text-decoration: none;
-        font-family: bahnschrift;
+        font-family: 'Bahnschrift', sans-serif;
     }
     .download-links {
       text-align: center;
@@ -74,7 +81,7 @@
 <body>
   <a id="top"></a>
   <div class="download-links">
-    <a href="zpevnik-dark.pdf" download>Stáhnout pdf verzi (tmavá verze)</a>, <a href="zpevnik-light.pdf" download>Stáhnout pdf verzi (světlá verze)</a>
+    <a href="zpevnik-dark.pdf" download>stáhnout pdf verzi (tmavá verze)</a>, <a href="zpevnik-light.pdf" download>stáhnout pdf verzi (světlá verze)</a>
   </div>
 <h1 style="text-align: center;">Osadní zpěvník T.O.</h1>
 <div style="text-align: center;">
@@ -16520,10 +16527,4 @@ slunce tady nevychází, cesty zpátky nevedou,</pre>
 <pre class="song-line">                                             
 ďábel veksl přehodí a šraňky zvedne za tebou.</pre>
 </div>
-<div class="chorus"><span class="label">R:</span><br>
-<pre class="song-line">                                             
-Mrtvej vlak, mrtvej vlak nedrží jízdní řád...</pre>
-</div>
-<div class="back-to-top"><a href="#top">↑ Nahoru</a></div>
-</div>
-</body></html>
+<div class="chorus"><span c
